@@ -36,8 +36,8 @@ app.use("/api/project",    projectRoutes);
 app.use("/api/task",       taskRoutes);
 app.use("/api/users",      userRoutes);
 
-app.get("/health", (_, res) => res.json({ status: "ok", app: "SprintOS API v2" }));
+app.get("/health", (_, res) => res.json({ status: "ok", app: "Praxo API v2" }));
 
 connectDB().then(() =>
-  app.listen(PORT, '0.0.0.0', () => console.log(`✅ SprintOS API → http://localhost:${PORT}`))
+  app.listen(PORT, '0.0.0.0', () => console.log(`✅ Praxo API → http://localhost:${PORT}`))
 );

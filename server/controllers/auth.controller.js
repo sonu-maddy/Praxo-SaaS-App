@@ -13,6 +13,7 @@ const signUp = async (req, res) => {
     if (!name || !email || !password)
       return res.status(400).send("All fields required");
     if (password.length < 6) return res.status(400).send("Password too short");
+    
     if (!/\S+@\S+\.\S+/.test(email))
       return res.status(400).send("Invalid email");
 
