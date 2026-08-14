@@ -23,7 +23,7 @@ app.use(cors({
     "http://localhost:3001",
      process.env.CLIENT_URL,
     "https://praxo-backend.onrender.com",
-    "https://sprint-os-orpin.vercel.app",
+    "https://sprint-os-app.vercel.app/",
   ].filter(Boolean),
   credentials: true,
 }));
